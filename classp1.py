@@ -328,17 +328,17 @@ print(tuple1)
 print(list1)
 
 
-#TUPLEE
-# print("Sanket Kumar Das", "24MCA10060")
-# mytuple = ("apple", "banana", "cherry","orange", "kiwi", "melon", "mango")
-# mytuple1=("1","2","3")
-# print(mytuple)
-# print(len(mytuple))
-# print(mytuple[1])
-# print(mytuple[-1])
-# print(mytuple[2:5])
-# result=mytuple+mytuple1
-# print(result)
+# TUPLEE
+print("Sanket Kumar Das", "24MCA10060")
+mytuple = ("apple", "banana", "cherry","orange", "kiwi", "melon", "mango")
+mytuple1=("1","2","3")
+print(mytuple)
+print(len(mytuple))
+print(mytuple[1])
+print(mytuple[-1])
+print(mytuple[2:5])
+result=mytuple+mytuple1
+print(result)
 
 
 #ADDING TUPLES
