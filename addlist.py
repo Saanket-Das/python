@@ -5,8 +5,7 @@ print(l1)
 l1.pop()
 print(l1)
 
-l1.sort()
-print(l1)
+
 l=[2,6,1,8,5]
 for item in l:
     print(item)
