@@ -26,4 +26,4 @@ if required_cols.issubset(dataset.columns):
     mpf.plot(dataset, type='candle', style='charles', volume=True, title="Stock Prices", show_nontrading=True)
     plt.show()  # Ensure the plot is displayed
 else:
-    print("Error: Missing required columns for candlestick chart!")
+    print("Error: Missing required columns for candlestick chart! ")
