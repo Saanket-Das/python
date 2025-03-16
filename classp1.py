@@ -80,7 +80,7 @@
 # print(x[0:12:3])
 
 
-#   DETERMING THE BIRTH YEAR FROM CURRENT YEAR
+#  DETERMING THE BIRTH YEAR FROM CURRENT YEAR
 # print("Sanket Kumar Das", "24MCA10060")
 # year=input("enter the the birth year")
 # year1=input("enter current year")
@@ -278,12 +278,13 @@ print(f)
 
 #USING MAX FUNCTION
 # print("Sanket Kumar Das", "24MCA10060")
+
+
 a, b, c = input("Enter three numbers separated by spaces: ").split()
 a = float(a)
 b = float(b)
 c = float(c)
 print(max(a, b, c))
-
 
 
 #FINDING MAX
