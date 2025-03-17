@@ -167,22 +167,54 @@
 
 
 
-class Car:
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand  # Encapsulation
+#         self.model = model
+
+#     def display_info(self):  # Abstraction
+#         return f"Car Brand: {self.brand}, Model: {self.model}"
+
+# # Inheritance and Polymorphism
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_capacity):
+#         super().__init__(brand, model)
+#         self.battery_capacity = battery_capacity
+
+#     def display_info(self):  # Polymorphism
+#         return f"{super().display_info()}, Battery: {self.battery_capacity} kWh"
+
+# car1 = ElectricCar("Tesla", "Model S", 100)
+# print(car1.display_info())
+
+
+
+
+
+
+
+
+class Car:  # Class name should be capitalized (PEP8 convention)
     def __init__(self, brand, model):
-        self.brand = brand  # Encapsulation
+        self.brand = brand
         self.model = model
 
-    def display_info(self):  # Abstraction
-        return f"Car Brand: {self.brand}, Model: {self.model}"
+    def display(self):
+        return f"Car brand: {self.brand}, Car model: {self.model}"
 
-# Inheritance and Polymorphism
-class ElectricCar(Car):
-    def __init__(self, brand, model, battery_capacity):
-        super().__init__(brand, model)
-        self.battery_capacity = battery_capacity
 
-    def display_info(self):  # Polymorphism
-        return f"{super().display_info()}, Battery: {self.battery_capacity} kWh"
+class Ele(Car):  # Inheriting from Car class
+    def __init__(self, brand, model, battery):  # Fix the method name
+        super().__init__(brand, model)  # Call parent class constructor
+        self.battery = battery  # Define the battery attribute
 
-car1 = ElectricCar("Tesla", "Model S", 100)
-print(car1.display_info())
+    def display(self):
+        return f"{super().display()}, Car battery: {self.battery}"  # Fix method call
+
+
+# Create an instance of the Ele class
+c = Ele("Tesla", "SS", 100)
+print(c.display())  # Call the display method
+
+
+    
