@@ -145,11 +145,12 @@
 # print("\nDataFrame:\n", data_frame)
 
 
-# import pandas as pd
-# d=pd.DataFrame({'name':['s','m'],
-#             'age':[21,23],
-#             'marks':[10,80]})
-# print(d)
+import pandas as pd
+d=pd.DataFrame({'name':['s','m'],
+            'age':[21,23],
+            'marks':[10,80]})
+print(d)
 
 
+print(d.iloc[1])
 
