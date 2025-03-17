@@ -191,30 +191,27 @@
 
 
 
+# class Car:  # Class name should be capitalized (PEP8 convention)
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def display(self):
+#         return f"Car brand: {self.brand}, Car model: {self.model}"
 
 
+# class Ele(Car):  # Inheriting from Car class
+#     def __init__(self, brand, model, battery):  # Fix the method name
+#         super().__init__(brand, model)  # Call parent class constructor
+#         self.battery = battery  # Define the battery attribute
 
-class Car:  # Class name should be capitalized (PEP8 convention)
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-
-    def display(self):
-        return f"Car brand: {self.brand}, Car model: {self.model}"
-
-
-class Ele(Car):  # Inheriting from Car class
-    def __init__(self, brand, model, battery):  # Fix the method name
-        super().__init__(brand, model)  # Call parent class constructor
-        self.battery = battery  # Define the battery attribute
-
-    def display(self):
-        return f"{super().display()}, Car battery: {self.battery}"  # Fix method call
+#     def display(self):
+#         return f"{super().display()}, Car battery: {self.battery}"  # Fix method call
 
 
-# Create an instance of the Ele class
-c = Ele("Tesla", "SS", 100)
-print(c.display())  # Call the display method
+# # Create an instance of the Ele class
+# c = Ele("Tesla", "SS", 100)
+# print(c.display())  # Call the display method
 
 
     
