@@ -117,10 +117,39 @@
 
 
 
+# import numpy as np
+# arr1=np.array([1,2,3,4,5,6])
+# print(arr1)
+# a=np.sum(arr1)
+# s=np.max(arr1)
+# p=np.prod(arr1)
+# d=np.min(arr1)
+# print(a,s,p,d)
 
 
 
 
+
+# import pandas as pd
+
+# # Series Example
+# data_series = pd.Series([10, 20, 30, 40], index=['A', 'B', 'C', 'D'])
+# print("Series:\n", data_series)
+
+# # DataFrame Example
+# data_frame = pd.DataFrame({
+#     'Name': ['Alice', 'Bob', 'Charlie'],
+#     'Age': [25, 30, 35],
+#     'City': ['New York', 'Los Angeles', 'Chicago']
+# })
+# print("\nDataFrame:\n", data_frame)
+
+
+# import pandas as pd
+# d=pd.DataFrame({'name':['s','m'],
+#             'age':[21,23],
+#             'marks':[10,80]})
+# print(d)
 
 
 
