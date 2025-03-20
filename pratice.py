@@ -81,6 +81,7 @@
 # # Generate a 1D array (vector) with 6 random integers (0 to 9)
 # x1 = rng.integers(10, size=6)
 
+
 # # Generate a 2D array (matrix) of shape (3, 4) with random integers (0 to 9)
 # x2 = rng.integers(10, size=(3, 4))
 
@@ -100,7 +101,7 @@
 # arr1=r.integers(10,size=6)
 # print(arr1)
 # arr2=r.integers(10,size=(3,4))
-# print(arr2)
+# print(arr2) 
 
 
 
@@ -127,11 +128,7 @@
 # print(a,s,p,d)
 
 
-
-
-
 # import pandas as pd
-
 # # Series Example
 # data_series = pd.Series([10, 20, 30, 40], index=['A', 'B', 'C', 'D'])
 # print("Series:\n", data_series)
@@ -152,19 +149,14 @@
 # print(d)
 
 
-# print(d.iloc[1])
-
-
+# print(d.iloc[1]) #wil select id by index 
 
 # import pandas as pd
-
 # # Load NYC Taxi Dataset
 # url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv"
 # df = pd.read_csv(url)
 
 # print("NYC Taxi Dataset:\n", df.head())
-
-
 
 
 # class Car:
@@ -191,7 +183,7 @@
 
 
 
-# class Car:  # Class name should be capitalized (PEP8 convention)
+# class Car: 
 #     def __init__(self, brand, model):
 #         self.brand = brand
 #         self.model = model
@@ -214,4 +206,26 @@
 # print(c.display())  # Call the display method
 
 
+
+
+
+
+
+class Car:
+    def __init__(self,brand, model):
+        self.brand =brand
+        self.model=model
+    def display(self):
+        return f"Car brand : {self.brand} ,car model :{self.model} "
+class Ele(Car):
+    def __init__(self, brand, model,battery):
+        super().__init__(brand,model)
+        self.battery   =battery
+
+    def display(self):
+         return f"{super().display()} ,car battery :{self.battery} "       
     
+c=Ele("tesla","ss",100)
+print(c.display()) 
+
+
